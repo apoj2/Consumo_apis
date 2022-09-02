@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
@@ -37,9 +38,9 @@
   </header>
   <main>
     <section class="container my-5">
-      <div class="row row-cols12 row-cols-md-12">
-        <div class="col">
-          <select class="form-select" aria-label="Default select example">
+      <div class="row row-cols-12 row-cols-md-12">
+        <div class="col col-12 col-md-8">
+          <select id="artista" class="form-select" aria-label="Default select example">
             <option selected>Open this select menu</option>
             <option value="2kCcBybjl3SAtIcwdWpUe3">Lil peep</option>
             <option value="15UsOTVnJzReFVN1VCnxy4">Xxxtentacion</option>
@@ -49,12 +50,15 @@
             <option value="4q3ewBCX7sLwd24euuV69X">Bad bunny</option>
             <option value="0yNSzH5nZmHzeE2xn6Xshb">Calle 13</option>
             <option value="0VZrPa7mWAYXH4CwmYk8Km">Kidd keo</option>
-            <option value="1W46eWEp41UmWgIiRTENuR">Ana Gabriel</option>
+            <option value="7Gi6gjaWy3DxyilpF1a8Is">Junior H</option>
             <option value="12vb80Km0Ew53ABfJOepVz">Ñengo flow</option>
           </select>
         </div>
+        <div class="col col-12 col-md-4">
+              <button id="btnBuscar" class="btn btn-success mx-auto d-block w-100"><i class="bi bi-search"></i></button>
+        </div>
       </div>
-      <div class="row row-cols-12 row-cols-md-3 shadow g-4 p-5" id="fila">
+      <div class="row row-cols-12 row-cols-md-3 shadow g-4 p-5 my-5" id="fila">
 
       </div>
     </section>
@@ -63,6 +67,6 @@
 
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="./src/services/spoty.js" type="module"></script>
+  <script src="./src/controllers/controladorIndex.js" type="module"></script>
 </body>
 </html>

@@ -1,8 +1,5 @@
-const ID_ARTISTA = "15UsOTVnJzReFVN1VCnxy4"
 
-export const URI = `https://api.spotify.com/v1/artists/${ID_ARTISTA}/top-tracks?market=US`
-
-const TOKEN = "Bearer BQBAwkaxV7XvQZkZGJJ1jJyNTo_v0ARhrrp3idaEx6Pt8nxBDBRcamw9KjfqJQYC5luKctBRD5Llk9u3t0-j8V5A48pH1T8xFY7l6hB_qvRW3gB8B9NbTJu2OzJwXWl5REa1tEgBnTKGqD2rFaqYZkfPy70-36sIMrn08QlRICQVp2TLGN_SPzFmubsLmjQ"
+const TOKEN = "Bearer BQA6xhCEZZmLckHaT9BPnzV1Qcew4Fo2lzeVmnsDMu_a8KcLIwBK8EoiVsCK-aDw6lcFF1epXYqfchqos6POqZ5Vvqx8pl7VvBbwoExDj6aIp7AWTlCq5uLQjzBQj9vaASigAA5t-NEHRORCXwZaC6fG7OLVak0MF12e7LiE06WHM-sdyC2uarf9J-I32aM"
 
 export const PETICION = {
     method:"GET",
@@ -10,6 +7,5 @@ export const PETICION = {
       Authorization:
         TOKEN
     }
-  
   }
 

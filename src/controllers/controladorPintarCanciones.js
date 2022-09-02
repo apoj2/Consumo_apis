@@ -1,7 +1,7 @@
 export function llenarspoty(canciones){
-    let fila = document.getElementById("fila")
-    fila.innerHTML=""
-    canciones.tracks.forEach(function(cancion){
+        let fila = document.getElementById("fila")
+        fila.innerHTML=""
+        canciones.forEach(function(cancion){
     
 
         let columna = document.createElement("div")

@@ -1,23 +1,9 @@
-import{URI,PETICION} from '../helpers/datosPeticionGet.js'
-import{consultarCanciones}from './servicioConsultarCanciones.js'
+import {consultarCanciones} from './servicioConsultarCanciones.js'
+import {URI,PETICION} from '../helpers/datosPeticionGet.js'
+import {llenarspoty} from '../controllers/controladorPintarCanciones.js'
 
-//consumiendo apis 
+const CANCIONES = await consultarCanciones(URI,PETICION);
 
-//1.Para donde voy
-consultarCanciones()
+llenarspoty(CANCIONES.tracks)
 
-
-.then(function(respuesta){
-
-  return respuesta.json()
-})
-
-.then(function(respuesta){
-  
-
-})
-
-.catch(function(respuestaError){
-
-  console.log(respuestaError)
-})
+console.log(CANCIONES)
